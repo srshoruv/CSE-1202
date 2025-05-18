@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 class digit_count
 {
     float digit;
@@ -42,10 +43,16 @@ void digit_count:: count()
 }
 
 int main() {
-    float digit;
-    cin >> digit;
 
-    digit_count newCount(digit);
-    newCount.count();
+    while (1)
+    {
+        float digit;
+        cout << "Enter a floating point number: ";
+        cin >> digit;
+
+        digit_count newCount(digit);
+        newCount.count();
+    }
+    
     return 0;
 }
